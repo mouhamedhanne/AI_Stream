@@ -7,7 +7,7 @@ export const Logo = () => {
     <>
       <div>
         <Link href="/">
-          <Image src={Logo_stream} alt="logo AiStream" width={130} />
+          <Image src={Logo_stream} alt="logo AiStream" width={100} />
         </Link>
       </div>
     </>

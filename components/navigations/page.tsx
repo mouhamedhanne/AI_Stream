@@ -7,10 +7,20 @@ import { Button } from "@/components/ui/button";
 function page() {
   return (
     <header>
-      <nav className="bg-home_page w-full z-20 top-0 left-0 ">
+      <nav className="bg-home_page ">
         <div className="flex justify-between items-center mx-7">
-          <div>
-            <Logo />
+          <div className="flex items-center space-x-8">
+            <div>
+              <Logo />
+            </div>
+            <div className="border-l border-white pl-4 ">
+              <Link
+                href="/pricing"
+                className="text-white hover:text-home_secondary"
+              >
+                Pricing
+              </Link>
+            </div>
           </div>
 
           <div className="flex items-center justify-center space-x-3">
