@@ -4,9 +4,11 @@ import { BentoGridThirdDemo } from "../_components/BentoPreview";
 
 export default function page() {
   return (
-    <div className="bg-home_page">
+    <div className="">
       <SpotlightPreview />
-      <BentoGridThirdDemo />
+      <div className="bg-[#18181B] pt-10 pb-10">
+        <BentoGridThirdDemo />
+      </div>
     </div>
   );
 }
