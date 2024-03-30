@@ -3,6 +3,8 @@ import Hero from "@/components/hero/page";
 import Services from "@/components/services/page";
 import Faq from "@/components/faq/page";
 import Pricing from "@/components/pricing/page";
+import CallToAction from "@/components/callAction/page";
+import AvisClient from "@/components/avis-clients/page";
 
 export default function page() {
   return (
@@ -10,8 +12,10 @@ export default function page() {
       <Navigations />
       <Hero />
       <Services />
-      <Faq />
       <Pricing />
+      <Faq />
+      <AvisClient />
+      <CallToAction />
     </div>
   );
 }
