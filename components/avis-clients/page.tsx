@@ -7,7 +7,7 @@ export default function page() {
       <div className="pt-3 flex justify-center items-center">
         <AnimatedTooltipPreview />
       </div>
-      <div className="flex justify-center items-center gap-2 mt-2 text-yellow-500">
+      <div className="flex justify-center items-center gap-2 text-yellow-500">
         <div className="flex items-center gap-0.5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
