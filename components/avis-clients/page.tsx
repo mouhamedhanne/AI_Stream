@@ -4,7 +4,7 @@ import AnimatedTooltipPreview from "@/components/_components/Preview-tooltip";
 export default function page() {
   return (
     <div className="bg-home_page">
-      <div className="pt-3 flex justify-center items-center">
+      <div className="lg:pt-3 pt-5 flex justify-center items-center">
         <AnimatedTooltipPreview />
       </div>
       <div className="flex justify-center items-center gap-2 mt-2 text-yellow-500">

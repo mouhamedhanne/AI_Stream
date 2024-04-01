@@ -8,7 +8,7 @@ import {
 export default function page() {
   return (
     <div className="bg-home_page text-white">
-      <div className="m-auto px-4 pt-20 lg:py-28 max-w-6xl flex max-lg:flex-col">
+      <div className="m-auto px-4 py-20 lg:py-28 max-w-6xl flex max-lg:flex-col">
         <div className="flex-1 space-y-2">
           <p className="font-extrabold uppercase text-home_secondary">FAQ</p>
           <h3 className="scroll-m-20 font-caption font-semibold tracking-tight transition-colors first:mt-0 text-5xl">
