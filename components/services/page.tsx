@@ -9,15 +9,15 @@ export default function page() {
          bg-clip-text text-transparent bg-gradient-to-b
           from-home_secondary to-neutral-50 bg-opacity-50 mt-20"
         >
-          Streamline your business with our services
+          Optimisez votre présence sur les réseaux sociaux
         </div>
         <p
           className="mt-4 text-lg font-normal
           text-neutral-300 max-w-lg 
-          text-center mx-auto"
+          text-center mx-auto px-2 lg:px-0"
         >
-          From website design to social media management, We offer a wide range
-          of services to help you grow your business.
+          Propulser votre entreprise vers le succès grâcegénération automatique
+          de contenu et la gestion stratégique des réseaux sociaux.
         </p>
       </div>
       <CardHoverEffectDemo />

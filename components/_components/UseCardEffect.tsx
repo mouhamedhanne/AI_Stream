@@ -9,39 +9,18 @@ export function CardHoverEffectDemo() {
 }
 export const projects = [
   {
-    title: "Stripe",
+    title: "Génération Automatique de Contenu",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
+      "AiStream utilise des algorithmes d'intelligence artificielle avancés pour générer automatiquement du contenu personnalisé et captivant pour vos réseaux sociaux, vous permettant d'économiser du temps et d'obtenir des résultats de qualité supérieure.",
   },
   {
-    title: "Netflix",
+    title: "Planification Intelligente des Publications",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+      "Planifiez vos publications à l'avance avec AiStream, en tenant compte des moments les plus propices pour maximiser votre visibilité et votre engagement, tout en automatisant entièrement votre calendrier éditorial pour une diffusion au bon moment, à chaque fois.",
   },
   {
-    title: "Google",
+    title: "Personnalisation Avancée",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
-  },
-  {
-    title: "Meta",
-    description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
-  },
-  {
-    title: "Amazon",
-    description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
-  },
-  {
-    title: "Microsoft",
-    description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+      "Avec AiStream, personnalisez votre contenu pour chaque groupe cible en segmentant votre audience et en adaptant votre message à leurs préférences et comportements, renforçant ainsi votre relation client avec une expérience personnalisée et pertinente.",
   },
 ];
