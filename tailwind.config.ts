@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       colors: {
-        home_page: "#212121",
+        home_page: "#0D1117",
         home_secondary: "#FF4F01",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -98,3 +98,5 @@ const config = {
 } satisfies Config;
 
 export default config;
+
+// home_page: "#212121",
