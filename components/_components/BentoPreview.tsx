@@ -223,7 +223,7 @@ const SkeletonFour = () => {
         </div>
 
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          Tailwind CSS is cool, you know
+          Tailwind CSS is cool
         </p>
         <Link
           href="/"
@@ -244,7 +244,7 @@ const SkeletonFour = () => {
           <p>Twitter</p>
         </div>
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          I love angular, RSC, and Redux.
+          I love angular, RSC
         </p>
         <Link
           href="/"
