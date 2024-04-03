@@ -14,7 +14,7 @@ export default function page() {
             className="inline-flex items-center justify-center rounded-md text-sm font-medium 
         ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 
         focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 
-        bg-home_secondary text-black hover:bg-home_secondary/90 h-11 rounded-md px-8"
+        bg-home_secondary text-white hover:bg-home_secondary/90 h-11 rounded-md px-8"
           >
             Rejoindre maintenant
           </button>

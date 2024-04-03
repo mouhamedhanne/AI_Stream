@@ -18,17 +18,14 @@ function page() {
                 href="/pricing"
                 className="text-white hover:text-home_secondary"
               >
-                Pricing
+                Tarifs
               </Link>
             </div>
           </div>
 
           <div className="flex items-center justify-center space-x-3">
             <Link href="/">
-              <Button
-                className="bg-home_secondary hover:bg-home_secondary gap-2
-               hover:opacity-90"
-              >
+              <Button className="bg-home_secondary hover:bg-home_secondary/90 h-11">
                 Contact
               </Button>
             </Link>
