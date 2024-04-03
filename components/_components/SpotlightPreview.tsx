@@ -46,7 +46,9 @@ export function SpotlightPreview() {
             >
               Demander un devis
             </button>{" "}
-            <Button className="bg-home_secondary">contact</Button>
+            <Button className="bg-home_secondary hover:bg-home_secondary/90 h-11">
+              contact
+            </Button>
           </div>
         </div>
       </div>

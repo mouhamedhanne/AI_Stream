@@ -12,6 +12,11 @@ import {
 import { motion } from "framer-motion";
 import Image from "next/image";
 import TestImg from "@/public/geek2.jpg";
+import Link from "next/link";
+import Analityc from "@/public/images/svg/analytic.svg";
+import LinkedinIcon from "@/public/images/svg/linkedin.svg";
+import FacebookIcon from "@/public/images/svg/facebook.svg";
+import TwitterIcon from "@/public/images/svg/x-twitter.svg";
 
 export function BentoGridThirdDemo() {
   return (
@@ -190,52 +195,63 @@ const SkeletonFour = () => {
         variants={first}
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
-        <Image
-          src={TestImg}
-          alt="avatar"
-          height="100"
-          width="100"
-          className="rounded-full h-10 w-10"
-        />
+        <div
+          className="mb-4 gap-2 flex h-14 w-full items-center justify-center overflow-hidden 
+       rounded-md bg-gradient-to-r from-amber-500 to-red-500"
+        >
+          <Image src={LinkedinIcon} alt="linkedin" className="w-8" />
+          <p>LinkedIn</p>
+        </div>
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
           Just code in Vanilla Javascript
         </p>
-        <p className="border border-red-500 bg-red-100 dark:bg-red-900/20 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Delusional
-        </p>
+
+        <Link
+          href="/"
+          className="border border-red-500 bg-red-100 dark:bg-red-900/20 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4"
+        >
+          More...
+        </Link>
       </motion.div>
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
-        <Image
-          src={TestImg}
-          alt="avatar"
-          height="100"
-          width="100"
-          className="rounded-full h-10 w-10"
-        />
+        <div
+          className="mb-4 gap-2 flex h-14 w-full items-center justify-center overflow-hidden 
+       rounded-md bg-gradient-to-r from-amber-500 to-red-500"
+        >
+          <Image src={FacebookIcon} alt="linkedin" className="w-8" />
+          <p>Facebook</p>
+        </div>
+
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
           Tailwind CSS is cool, you know
         </p>
-        <p className="border border-green-500 bg-green-100 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Sensible
-        </p>
+        <Link
+          href="/"
+          className="border border-green-500 bg-green-100 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4"
+        >
+          More...
+        </Link>
       </motion.div>
       <motion.div
         variants={second}
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
-        <Image
-          src={TestImg}
-          alt="avatar"
-          height="100"
-          width="100"
-          className="rounded-full h-10 w-10"
-        />
+        <div
+          className="mb-4 gap-2 flex h-14 w-full items-center justify-center overflow-hidden 
+       rounded-md bg-gradient-to-r from-amber-500 to-red-500"
+        >
+          <Image src={TwitterIcon} alt="linkedin" className="w-8" />
+          <p>Twitter</p>
+        </div>
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
           I love angular, RSC, and Redux.
         </p>
-        <p className="border border-orange-500 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Helpless
-        </p>
+        <Link
+          href="/"
+          className="border border-orange-500 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4"
+        >
+          More...
+        </Link>
       </motion.div>
     </motion.div>
   );
@@ -298,6 +314,12 @@ const SkeletonFive = () => {
     </motion.div>
   );
 };
+
+//get icons
+const AnalitycIcon = () => {
+  return <Image src={Analityc} alt="analitycs icon" className="h-4 w-4" />;
+};
+
 const items = [
   {
     title: "AI Content Generation",
@@ -341,7 +363,7 @@ const items = [
     ),
     header: <SkeletonFour />,
     className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    icon: <AnalitycIcon />,
   },
 
   {
@@ -356,3 +378,5 @@ const items = [
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
 ];
+
+//<IconTableColumn className="h-4 w-4 text-neutral-500" />
