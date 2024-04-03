@@ -7,7 +7,6 @@ import {
   IconClipboardCopy,
   IconFileBroken,
   IconSignature,
-  IconTableColumn,
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -223,7 +222,7 @@ const SkeletonFour = () => {
         </div>
 
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          Tailwind CSS is cool
+          Tailwind CSS is tailwind
         </p>
         <Link
           href="/"
@@ -244,7 +243,7 @@ const SkeletonFour = () => {
           <p>Twitter</p>
         </div>
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          I love angular, RSC
+          I love angular and vue
         </p>
         <Link
           href="/"
