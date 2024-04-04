@@ -18,7 +18,7 @@ export default function page() {
               © 2024 AiStream - All rights reserved.
             </p>
           </div>
-          <div className="flex flex-col items-end gap-4">
+          <div className="flex flex-col items-start mt-4 lg:mt-0 lg:items-end gap-4">
             <p className="text-lg text-white font-semibold">Legal</p>
             <Link
               href="/"
@@ -34,7 +34,7 @@ export default function page() {
             </Link>
           </div>
 
-          <div className="flex flex-col items-end gap-4">
+          <div className="flex flex-col items-start mt-4 lg:mt-0 lg:items-end gap-4">
             <p className="text-lg text-white font-semibold">Social</p>
             <Link
               href="/"

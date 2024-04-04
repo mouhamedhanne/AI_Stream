@@ -19,18 +19,20 @@ import TwitterIcon from "@/public/images/svg/x-twitter.svg";
 
 export function BentoGridThirdDemo() {
   return (
-    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          className={cn("[&>p:text-lg]", item.className)}
-          icon={item.icon}
-        />
-      ))}
-    </BentoGrid>
+    <div className="flex justify-center">
+      <BentoGrid className="max-w-6xl mx-auto md:auto-rows-[20rem] lg:flex justify-center">
+        {items.map((item, i) => (
+          <BentoGridItem
+            key={i}
+            title={item.title}
+            description={item.description}
+            header={item.header}
+            className={cn("[&>p:text-lg]", item.className)}
+            icon={item.icon}
+          />
+        ))}
+      </BentoGrid>
+    </div>
   );
 }
 const Skeleton = () => (
@@ -132,6 +134,9 @@ const SkeletonTwo = () => {
     </motion.div>
   );
 };
+
+{
+  /**
 const SkeletonThree = () => {
   const variants = {
     initial: {
@@ -162,6 +167,10 @@ const SkeletonThree = () => {
     </motion.div>
   );
 };
+
+ */
+}
+
 const SkeletonFour = () => {
   const first = {
     initial: {
@@ -195,14 +204,14 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <div
-          className="mb-4 gap-2 flex h-14 w-full items-center justify-center overflow-hidden 
+          className="mb-4 gap-2 flex h-14 lg:p-6 p-0 w-full items-center justify-center overflow-hidden 
        rounded-md bg-gradient-to-r from-amber-500 to-red-500"
         >
-          <Image src={LinkedinIcon} alt="linkedin" className="w-8" />
-          <p>LinkedIn</p>
+          <Image src={LinkedinIcon} alt="linkedin" className="w-4 lg:w-8" />
+          <p className=" text-[12px] lg:text-[16px]">LinkedIn</p>
         </div>
-        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          Just code in Vanilla Javascript
+        <p className="sm:text-sm text-sm text-center font-semibold text-neutral-500 mt-4">
+          Découvrez comment nous allons attirer votre audience.
         </p>
 
         <Link
@@ -214,15 +223,15 @@ const SkeletonFour = () => {
       </motion.div>
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
         <div
-          className="mb-4 gap-2 flex h-14 w-full items-center justify-center overflow-hidden 
+          className="mb-4 gap-2 flex h-14 lg:p-6 p-0 w-full items-center justify-center overflow-hidden 
        rounded-md bg-gradient-to-r from-amber-500 to-red-500"
         >
-          <Image src={FacebookIcon} alt="linkedin" className="w-8" />
-          <p>Facebook</p>
+          <Image src={FacebookIcon} alt="linkedin" className="w-4 lg:w-8" />
+          <p className=" text-[12px] lg:text-[16px]">Facebook</p>
         </div>
 
-        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          Tailwind CSS is tailwind
+        <p className="sm:text-sm text-sm text-center font-semibold text-neutral-500 mt-4">
+          Découvrez comment nous allons attirer votre audience.
         </p>
         <Link
           href="/"
@@ -236,14 +245,14 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <div
-          className="mb-4 gap-2 flex h-14 w-full items-center justify-center overflow-hidden 
+          className="mb-4 gap-2 flex h-14 lg:p-6 p-0 w-full items-center justify-center overflow-hidden 
        rounded-md bg-gradient-to-r from-amber-500 to-red-500"
         >
-          <Image src={TwitterIcon} alt="linkedin" className="w-8" />
-          <p>Twitter</p>
+          <Image src={TwitterIcon} alt="linkedin" className="w-4 lg:w-8" />
+          <p className=" text-[12px] lg:text-[16px]">Twitter</p>
         </div>
-        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          I love angular and vue
+        <p className="sm:text-sm text-sm text-center font-semibold text-neutral-500 mt-4">
+          Découvrez comment nous allons attirer votre audience.
         </p>
         <Link
           href="/"
@@ -255,6 +264,8 @@ const SkeletonFour = () => {
     </motion.div>
   );
 };
+{
+  /**
 const SkeletonFive = () => {
   const variants = {
     initial: {
@@ -313,6 +324,8 @@ const SkeletonFive = () => {
     </motion.div>
   );
 };
+ */
+}
 
 //get icons
 const AnalitycIcon = () => {
@@ -321,10 +334,11 @@ const AnalitycIcon = () => {
 
 const items = [
   {
-    title: "AI Content Generation",
+    title: "Génération de Contenu par l'IA",
     description: (
       <span className="text-sm">
-        Experience the power of AI in generating unique content.
+        AiStream utilise des algorithmes d'intelligence artificielle avancés
+        pour créer automatiquement du contenu captivant et personnalisé.
       </span>
     ),
     header: <SkeletonOne />,
@@ -332,49 +346,29 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Automated Proofreading",
+    title: "Automatisation de la Publication",
     description: (
       <span className="text-sm">
-        Let AI handle the proofreading of your documents.
+        AiStream planifie et publier automatiquement votre contenu sur vos
+        plateformes de médias sociaux préférées.
       </span>
     ),
     header: <SkeletonTwo />,
     className: "md:col-span-1",
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
+
   {
-    title: "Contextual Suggestions",
+    title: "Contenu Créatif, Résultats Concrets",
     description: (
       <span className="text-sm">
-        Get AI-powered suggestions based on your writing context.
-      </span>
-    ),
-    header: <SkeletonThree />,
-    className: "md:col-span-1",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "Sentiment Analysis",
-    description: (
-      <span className="text-sm">
-        Understand the sentiment of your text with AI analysis.
+        Découvrez comment notre agence peut vous aider à générer du contenu
+        créatif.
       </span>
     ),
     header: <SkeletonFour />,
     className: "md:col-span-2",
     icon: <AnalitycIcon />,
-  },
-
-  {
-    title: "Text Summarization",
-    description: (
-      <span className="text-sm">
-        Summarize your lengthy documents with AI technology.
-      </span>
-    ),
-    header: <SkeletonFive />,
-    className: "md:col-span-1",
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
 ];
 
