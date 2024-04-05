@@ -28,7 +28,8 @@ export default function page() {
             height="36"
             viewBox="0 0 255 36"
             fill="none"
-            className="absolute -bottom-2 left-[-50%] top-5 z-0  inline-block w-[200%] text-home_secondary"
+            className="absolute -bottom-2 left-[-50%] top-5 z-0  inline-block w-[150%] 
+            text-home_secondary"
           >
             <path
               d="M2.99975 17.6351C116.771 12.3405 178.178 12.7036 252 18.0966"
@@ -56,8 +57,11 @@ export default function page() {
         </b>
         <span className="italic">de Contenu</span>
       </h2>
-      <div className="flex flex-col items-center justify-center lg:flex-row">
-        <div className="overflow-hidden shadow w-full max-w-[480px] rounded-lg border border-home_secondary bg-card/20 py-6">
+      <div className="flex flex-col items-center justify-center lg:flex-row ">
+        <div
+          className="overflow-hidden shadow w-full max-w-[480px] rounded-lg border 
+        border-home_secondary bg-card/20 py-6 mb-4 lg:mb-0"
+        >
           <div className="relative flex flex-col pt-4 md:pt-6 lg:pt-8">
             <div className="mt-6 px-6 last-of-type:pt-0 md:px-8 lg:px-10 flex flex-col gap-2">
               <span
@@ -74,9 +78,11 @@ export default function page() {
                   <Image src={Logo_stream} alt="Logo AiStream" />
                 </span>
                 <div className="flex flex-col gap-1">
-                  <p className="text-lg font-medium text-white">AiStream Pro</p>
-                  <p className="text-base font-medium text-muted-foreground">
-                    Boilerplate + cour Introduction
+                  <p className="text-lg font-medium text-white">
+                    AiStream FuelAI
+                  </p>
+                  <p className="text-[15px] font-medium text-muted-foreground">
+                    Offre haut de gamme idéal pour les entreprises
                   </p>
                 </div>
               </div>
@@ -84,12 +90,12 @@ export default function page() {
             <div className="mt-4 flex items-center gap-2 justify-center pt-3">
               <div className="relative w-fit">
                 <p className="whitespace-nowrap text-3xl font-bold text-[#A8A29E]">
-                  400 €
+                  250 €
                 </p>
                 <div className="absolute inset-x-0 top-4 h-0.5 bg-red-500"></div>
               </div>
               <p className="whitespace-nowrap text-4xl font-bold text-white">
-                187 €
+                149 €
               </p>
               <span
                 className="inline-flex items-center rounded-md font-medium forced-colors:outline 
@@ -97,7 +103,7 @@ export default function page() {
             dark:text-red-400 dark:group-data-[hover]:bg-red-500/20 px-1.5 py-0.5 text-sm/5 
             sm:text-xs/5 gap-x-1.5"
               >
-                -213 €
+                -101 €
               </span>
             </div>
             <div className="mt-6 flex flex-col gap-6 px-6 last-of-type:pt-0 md:px-8 lg:px-10">
@@ -117,8 +123,9 @@ export default function page() {
                   >
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
-                  <span className="flex-1 text-base text-muted-foreground">
-                    Tout ce qui est ce qui est inclus dans AiStream
+                  <span className="flex-1 text-base text-gray-300">
+                    2 publications par jour générées par l'IA sur 3 réseaux
+                    sociaux (ex: Facebook, Twitter, LinkedIn)
                   </span>
                 </li>
                 <li className="flex items-center gap-2">
@@ -136,8 +143,8 @@ export default function page() {
                   >
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
-                  <span className="flex-1 text-base text-muted-foreground">
-                    Tout ce qui est ce qui est inclus dans AiStream
+                  <span className="flex-1 text-base text-gray-300">
+                    Publication automatisée sur les 3 réseaux incluse
                   </span>
                 </li>
                 <li className="flex items-center gap-2">
@@ -155,8 +162,8 @@ export default function page() {
                   >
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
-                  <span className="flex-1 text-base text-muted-foreground">
-                    Tout ce qui est ce qui est inclus dans AiStream
+                  <span className="flex-1 text-base text-gray-300">
+                    Bibliothèque étendue de modèles IA (différents formats)
                   </span>
                 </li>
                 <li className="flex items-center gap-2">
@@ -174,8 +181,8 @@ export default function page() {
                   >
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
-                  <span className="flex-1 text-base text-muted-foreground">
-                    Tout ce qui est ce qui est inclus dans AiStream
+                  <span className="flex-1 text-base text-gray-300">
+                    Analyse mensuelle des performances
                   </span>
                 </li>
                 <li className="flex items-center gap-2">
@@ -193,27 +200,8 @@ export default function page() {
                   >
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
-                  <span className="flex-1 text-base text-muted-foreground">
-                    Tout ce qui est ce qui est inclus dans AiStream
-                  </span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    className="lucide lucide-check text-home_secondary"
-                  >
-                    <path d="M20 6 9 17l-5-5"></path>
-                  </svg>
-                  <span className="flex-1 text-base text-muted-foreground">
-                    Tout ce qui est ce qui est inclus dans AiStream
+                  <span className="flex-1 text-base text-gray-300">
+                    Support prioritaire
                   </span>
                 </li>
               </ul>
@@ -225,7 +213,7 @@ export default function page() {
               focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-home_secondary
               text-primary-foreground hover:bg-home_secondary/90 h-11 rounded-md px-8 font-bold"
               >
-                Deviens un Pro
+                Deviens un FuelAI
               </button>
             </div>
           </div>
@@ -244,9 +232,9 @@ export default function page() {
                     <Image src={Logo_stream} alt="Logo AiStream" />
                   </span>
                   <div className="flex flex-col gap-1">
-                    <p className="text-lg font-medium">AiStream Pro</p>
-                    <p className="text-base font-medium text-muted-foreground">
-                      Boilerplate + cour Introduction
+                    <p className="text-lg font-medium">AiStream Streamflow</p>
+                    <p className="text-[15px] font-medium text-muted-foreground">
+                      Idéal pour les petites entreprises et entrepreneurs
                     </p>
                   </div>
                 </div>
@@ -254,18 +242,18 @@ export default function page() {
               <div className="mt-4 flex items-center justify-center gap-2">
                 <div className="relative w-fit">
                   <p className="whitespace-nowrap text-3xl font-bold text-[#A8A29E]">
-                    400 €
+                    120 €
                   </p>
                   <div className="absolute inset-x-0 top-4 h-0.5 bg-red-500"></div>
                 </div>
-                <p className="whitespace-nowrap text-4xl font-bold">187 €</p>
+                <p className="whitespace-nowrap text-4xl font-bold">59 €</p>
                 <span
                   className="inline-flex items-center rounded-md font-medium forced-colors:outline 
             bg-red-500/15 text-red-700 group-data-[hover]:bg-red-500/25 dark:bg-red-500/10 
             dark:text-red-400 dark:group-data-[hover]:bg-red-500/20 px-1.5 py-0.5 text-sm/5 
             sm:text-xs/5 gap-x-1.5"
                 >
-                  -213 €
+                  -61 €
                 </span>
               </div>
               <div className="mt-6 flex flex-col gap-6 px-6 last-of-type:pt-0 md:px-8 lg:px-10">
@@ -286,7 +274,8 @@ export default function page() {
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span className="flex-1 text-base text-muted-foreground">
-                      Tout ce qui est ce qui est inclus dans AiStream
+                      1 publication par jour générée par l'IA sur 1 réseau
+                      social (ex: Facebook ou LinkedIn)
                     </span>
                   </li>
                   <li className="flex items-center gap-2">
@@ -305,7 +294,7 @@ export default function page() {
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span className="flex-1 text-base text-muted-foreground">
-                      Tout ce qui est ce qui est inclus dans AiStream
+                      Publication automatisée incluse
                     </span>
                   </li>
                   <li className="flex items-center gap-2">
@@ -324,7 +313,7 @@ export default function page() {
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span className="flex-1 text-base text-muted-foreground">
-                      Tout ce qui est ce qui est inclus dans AiStream
+                      Bibliothèque de modèles de contenu IA de base
                     </span>
                   </li>
                   <li className="flex items-center gap-2">
@@ -343,7 +332,7 @@ export default function page() {
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span className="flex-1 text-base text-muted-foreground">
-                      Tout ce qui est ce qui est inclus dans AiStream
+                      Support par email
                     </span>
                   </li>
                 </ul>
@@ -355,7 +344,7 @@ export default function page() {
               focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-home_secondary 
               text-primary-foreground hover:bg-home_secondary/90 h-11 rounded-md px-8 font-bold"
                 >
-                  Deviens un Pro
+                  Deviens un StreamFlow
                 </button>
               </div>
             </div>

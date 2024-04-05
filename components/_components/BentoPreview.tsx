@@ -16,6 +16,8 @@ import Analityc from "@/public/images/svg/analytic.svg";
 import LinkedinIcon from "@/public/images/svg/linkedin.svg";
 import FacebookIcon from "@/public/images/svg/facebook.svg";
 import TwitterIcon from "@/public/images/svg/x-twitter.svg";
+import Automate from "@/public/images/svg/Automate.svg";
+import IaGeneration from "@/public/images/svg/generation.svg"
 
 export function BentoGridThirdDemo() {
   return (
@@ -210,7 +212,7 @@ const SkeletonFour = () => {
           <Image src={LinkedinIcon} alt="linkedin" className="w-4 lg:w-8" />
           <p className=" text-[12px] lg:text-[16px]">LinkedIn</p>
         </div>
-        <p className="sm:text-sm text-sm text-center font-semibold text-neutral-500 mt-4">
+        <p className="lg:text-sm text-[13px] text-center font-semibold text-neutral-500 mt-4">
           Découvrez comment nous allons attirer votre audience.
         </p>
 
@@ -230,7 +232,7 @@ const SkeletonFour = () => {
           <p className=" text-[12px] lg:text-[16px]">Facebook</p>
         </div>
 
-        <p className="sm:text-sm text-sm text-center font-semibold text-neutral-500 mt-4">
+        <p className="lg:text-sm text-[13px] text-center font-semibold text-neutral-500 mt-4">
           Découvrez comment nous allons attirer votre audience.
         </p>
         <Link
@@ -251,7 +253,7 @@ const SkeletonFour = () => {
           <Image src={TwitterIcon} alt="linkedin" className="w-4 lg:w-8" />
           <p className=" text-[12px] lg:text-[16px]">Twitter</p>
         </div>
-        <p className="sm:text-sm text-sm text-center font-semibold text-neutral-500 mt-4">
+        <p className="lg:text-sm text-[13px] text-center font-semibold text-neutral-500 mt-4">
           Découvrez comment nous allons attirer votre audience.
         </p>
         <Link
@@ -332,6 +334,14 @@ const AnalitycIcon = () => {
   return <Image src={Analityc} alt="analitycs icon" className="h-4 w-4" />;
 };
 
+const AutomateIcon = () => {
+  return <Image src={Automate} alt="Automatisation icon" className="h-4 w-4" />;
+};
+
+const IaGenerationIcon = () => {
+  return <Image src={IaGeneration} alt="ia generation icon" className="h-4 w-4" />
+}
+
 const items = [
   {
     title: "Génération de Contenu par l'IA",
@@ -343,7 +353,7 @@ const items = [
     ),
     header: <SkeletonOne />,
     className: "md:col-span-1",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    icon: <IaGenerationIcon />,
   },
   {
     title: "Automatisation de la Publication",
@@ -355,7 +365,7 @@ const items = [
     ),
     header: <SkeletonTwo />,
     className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    icon: <AutomateIcon />,
   },
 
   {
