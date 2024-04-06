@@ -232,7 +232,7 @@ export default function page() {
                     <Image src={Logo_stream} alt="Logo AiStream" />
                   </span>
                   <div className="flex flex-col gap-1">
-                    <p className="text-lg font-medium">AiStream Streamflow</p>
+                    <p className="text-lg font-medium">AiStream StreamFlow</p>
                     <p className="text-[15px] font-medium text-muted-foreground">
                       Idéal pour les petites entreprises et entrepreneurs
                     </p>
