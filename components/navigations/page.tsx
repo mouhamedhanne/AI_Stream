@@ -8,7 +8,7 @@ import { useState } from "react";
 import { Menu } from "lucide-react";
 
 export default function Page() {
-  const [menuOpen, setMenuOpen] = useState(false); // État pour suivre l'état du menu mobile
+  const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
   return (
