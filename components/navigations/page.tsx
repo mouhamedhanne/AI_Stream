@@ -5,8 +5,7 @@ import { Logo } from "@/components/logo/page";
 import { Button } from "@/components/ui/button";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Menu } from "lucide-react";
-import { X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export default function Page() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -48,7 +47,7 @@ export default function Page() {
                 Contact
               </Link>
             </div>
-            {/* Menu hamburger pour les écrans mobiles */}
+            {/* Menu pour les écrans mobiles */}
           </div>
 
           <div className="md:hidden ">
@@ -56,7 +55,11 @@ export default function Page() {
               onClick={() => setMenuOpen(!menuOpen)}
               className="text-white "
             >
-              {!menuOpen ? <Menu size="24" className="h-6 " /> : <X />}
+              {!menuOpen ? (
+                <Menu size="24" className="h-6 " />
+              ) : (
+                <X size="24" />
+              )}
             </button>
           </div>
 
