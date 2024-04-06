@@ -5,7 +5,7 @@ import { Logo } from "@/components/logo/page";
 import { Button } from "@/components/ui/button";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export default function Page() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,12 +15,12 @@ export default function Page() {
     <header>
       <nav className="bg-home_page ">
         <div className="flex justify-between items-center mx-7">
-          <div className="flex items-center lg:space-x-8 ">
+          <div className="flex items-center space-x-8 ">
             <div className="">
               <Logo />
             </div>
             {/* Menu pour les écrans larges */}
-            <div className="hidden md:flex items-center  lg:border-l border-white lg:pl-4 lg:space-x-5">
+            <div className="hidden md:flex items-center  border-l border-white pl-4 space-x-5">
               <Link
                 href="/"
                 className={`text-white hover:text-home_secondary ${
@@ -47,18 +47,23 @@ export default function Page() {
                 Contact
               </Link>
             </div>
-            {/* Menu hamburger pour les écrans mobiles */}
-            <div className="lg:hidden ">
-              <button
-                onClick={() => setMenuOpen(!menuOpen)}
-                className="text-white "
-              >
-                <Menu size="24" className="h-6 " />
-              </button>
-            </div>
+            {/* Menu pour les écrans mobiles */}
           </div>
 
-          <div className="flex items-center justify-center space-x-3 lg:block hidden">
+          <div className="md:hidden ">
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="text-white "
+            >
+              {!menuOpen ? (
+                <Menu size="24" className="h-6 " />
+              ) : (
+                <X size="24" />
+              )}
+            </button>
+          </div>
+
+          <div className="flex items-center justify-center space-x-3 md:block hidden">
             <Link href="/">
               <Button className="bg-home_secondary hover:bg-home_secondary/90 h-11">
                 Commencer
@@ -114,6 +119,7 @@ export default function Page() {
   );
 }
 
+//first use
 {
   /**
 function page() {
